@@ -30,7 +30,8 @@ const server = express();
 //Toma en cuenta video 422 de del curso habilitando CORS en el backend
 const allowedOrigins = [
     process.env.FRONTEND_URL,
-    process.env.BACKEND_URL
+    process.env.BACKEND_URL,
+    'https://rest-apis-typescript-backendfullstack1.onrender.com/api/products'
 ];
 
 const corsOptions : CorsOptions = {
